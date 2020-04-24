@@ -47,13 +47,13 @@
  * This is simple TFTP server for the lwIP raw API.
  */
 
-#include "lwip/apps/tftp_server.h"
+#include "tftp_server.h"
 
 #if LWIP_UDP
 
-#include "lwip/udp.h"
-#include "lwip/timeouts.h"
-#include "lwip/debug.h"
+#include "udp.h"
+#include "timeouts.h"
+#include "debug.h"
 
 #define TFTP_MAX_PAYLOAD_SIZE 512
 #define TFTP_HEADER_LENGTH    4

@@ -4,6 +4,7 @@
 "-I0_Src/AppSw/lwip/AURIX"
 "-I0_Src/AppSw/Tricore/Appl"
 "-I0_Src/AppSw/Tricore/Drivers"
+"-I0_Src/AppSw/lwip/doc/doxygen"
 "-I0_Src/BaseSw/iLLD/TC27D/Tricore"
 "-I0_Src/BaseSw/Service/CpuGeneric/If"
 "-I0_Src/BaseSw/Service/CpuGeneric/StdIf"

@@ -169,4 +169,4 @@
 	<specificInclude internalPaths= "*/Sfr/*, */BaseSw/*/Tricore, */BaseSw/*/Platform, */BaseSw/*/CpuGeneric, */lwip/src/include" />
 	<selection enable="true">
 		<use></use>
-		<discard files="*heap_1*,*heap_3*,*heap_4*,*heap_5*,*sys_arch_nosys*, *mpu_wrappers.c*, *slipif.c*, *diskio.c*, *makefsdata*, *fsdata.c*"></discard></selection></root>
+		<discard files="*heap_1*,*heap_3*,*heap_4*,*heap_5*,*sys_arch_nosys*, *mpu_wrappers.c*, *slipif.c*, *diskio.c*, *makefsdata*, *fsdata.c*, *tftp_server.c*"></discard></selection></root>

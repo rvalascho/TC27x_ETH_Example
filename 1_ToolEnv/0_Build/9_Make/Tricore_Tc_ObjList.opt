@@ -81,7 +81,6 @@
 "2_Out/Tricore_Tasking/Tasking_Files/0_Src/AppSw/lwip/src/apps/snmp/snmp_threadsync.o"
 "2_Out/Tricore_Tasking/Tasking_Files/0_Src/AppSw/lwip/src/apps/snmp/snmp_traps.o"
 "2_Out/Tricore_Tasking/Tasking_Files/0_Src/AppSw/lwip/src/apps/sntp/sntp.o"
-"2_Out/Tricore_Tasking/Tasking_Files/0_Src/AppSw/lwip/src/apps/tftp/tftp_server.o"
 "2_Out/Tricore_Tasking/Tasking_Files/0_Src/AppSw/lwip/src/core/ipv4/autoip.o"
 "2_Out/Tricore_Tasking/Tasking_Files/0_Src/AppSw/lwip/src/core/ipv4/dhcp.o"
 "2_Out/Tricore_Tasking/Tasking_Files/0_Src/AppSw/lwip/src/core/ipv4/etharp.o"

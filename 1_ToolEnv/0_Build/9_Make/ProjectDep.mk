@@ -14,6 +14,7 @@
  0_Src/AppSw/FreeRTOS/include \
  0_Src/AppSw/FreeRTOS/portable \
  0_Src/AppSw/lwip/AURIX \
+ 0_Src/AppSw/lwip/doc \
  0_Src/AppSw/lwip/port \
  0_Src/AppSw/lwip/src \
  0_Src/AppSw/Tricore/Appl \
@@ -26,6 +27,7 @@
  0_Src/AppSw/FreeRTOS/portable/Common \
  0_Src/AppSw/FreeRTOS/portable/GCC \
  0_Src/AppSw/FreeRTOS/portable/MemMang \
+ 0_Src/AppSw/lwip/doc/doxygen \
  0_Src/AppSw/lwip/port/include \
  0_Src/AppSw/lwip/port/netif \
  0_Src/AppSw/lwip/port/sys \
@@ -42,6 +44,7 @@
  0_Src/BaseSw/Service/CpuGeneric/SysSe \
  0_Src/BaseSw/Service/CpuGeneric/_Utilities \
  0_Src/AppSw/FreeRTOS/portable/GCC/TriCore \
+ 0_Src/AppSw/lwip/doc/doxygen/output \
  0_Src/AppSw/lwip/port/include/arch \
  0_Src/AppSw/lwip/port/netif/DWC_ether \
  0_Src/AppSw/lwip/src/apps/httpd \
@@ -219,6 +222,8 @@
 
 0_Src/AppSw/lwip/AURIX:
 
+0_Src/AppSw/lwip/doc:
+
 0_Src/AppSw/lwip/port:
 
 0_Src/AppSw/lwip/src:
@@ -242,6 +247,8 @@
 0_Src/AppSw/FreeRTOS/portable/GCC:
 
 0_Src/AppSw/FreeRTOS/portable/MemMang:
+
+0_Src/AppSw/lwip/doc/doxygen:
 
 0_Src/AppSw/lwip/port/include:
 
@@ -274,6 +281,8 @@
 0_Src/BaseSw/Service/CpuGeneric/_Utilities:
 
 0_Src/AppSw/FreeRTOS/portable/GCC/TriCore:
+
+0_Src/AppSw/lwip/doc/doxygen/output:
 
 0_Src/AppSw/lwip/port/include/arch:
 

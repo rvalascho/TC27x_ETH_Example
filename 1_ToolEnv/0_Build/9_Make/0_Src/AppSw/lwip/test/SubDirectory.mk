@@ -30,16 +30,11 @@
 # (support@infineon.com).
 # 
 # -----------------------------------------------------------------------------
-# Subdirectory make file for 0_Src/AppSw/lwip/src/apps
+# Subdirectory make file for 0_Src/AppSw/lwip/test
 # !! Generated make file, modifications could be overwritten !!
 #------------------------------------------------------------------------------
 
 
 # Include sub folder make files
-include 1_ToolEnv/0_Build/9_Make/0_Src/AppSw/lwip/src/apps/httpd/SubDirectory.mk
-include 1_ToolEnv/0_Build/9_Make/0_Src/AppSw/lwip/src/apps/lwiperf/SubDirectory.mk
-include 1_ToolEnv/0_Build/9_Make/0_Src/AppSw/lwip/src/apps/mdns/SubDirectory.mk
-include 1_ToolEnv/0_Build/9_Make/0_Src/AppSw/lwip/src/apps/mqtt/SubDirectory.mk
-include 1_ToolEnv/0_Build/9_Make/0_Src/AppSw/lwip/src/apps/netbiosns/SubDirectory.mk
-include 1_ToolEnv/0_Build/9_Make/0_Src/AppSw/lwip/src/apps/snmp/SubDirectory.mk
-include 1_ToolEnv/0_Build/9_Make/0_Src/AppSw/lwip/src/apps/sntp/SubDirectory.mk
+include 1_ToolEnv/0_Build/9_Make/0_Src/AppSw/lwip/test/fuzz/SubDirectory.mk
+include 1_ToolEnv/0_Build/9_Make/0_Src/AppSw/lwip/test/unit/SubDirectory.mk

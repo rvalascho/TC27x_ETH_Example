@@ -30,16 +30,31 @@
 # (support@infineon.com).
 # 
 # -----------------------------------------------------------------------------
-# Subdirectory make file for 0_Src/AppSw/lwip/src/apps
+# Subdirectory make file for 0_Src/AppSw/lwip/test/unit
 # !! Generated make file, modifications could be overwritten !!
 #------------------------------------------------------------------------------
 
 
 # Include sub folder make files
-include 1_ToolEnv/0_Build/9_Make/0_Src/AppSw/lwip/src/apps/httpd/SubDirectory.mk
-include 1_ToolEnv/0_Build/9_Make/0_Src/AppSw/lwip/src/apps/lwiperf/SubDirectory.mk
-include 1_ToolEnv/0_Build/9_Make/0_Src/AppSw/lwip/src/apps/mdns/SubDirectory.mk
-include 1_ToolEnv/0_Build/9_Make/0_Src/AppSw/lwip/src/apps/mqtt/SubDirectory.mk
-include 1_ToolEnv/0_Build/9_Make/0_Src/AppSw/lwip/src/apps/netbiosns/SubDirectory.mk
-include 1_ToolEnv/0_Build/9_Make/0_Src/AppSw/lwip/src/apps/snmp/SubDirectory.mk
-include 1_ToolEnv/0_Build/9_Make/0_Src/AppSw/lwip/src/apps/sntp/SubDirectory.mk
+include 1_ToolEnv/0_Build/9_Make/0_Src/AppSw/lwip/test/unit/core/SubDirectory.mk
+include 1_ToolEnv/0_Build/9_Make/0_Src/AppSw/lwip/test/unit/dhcp/SubDirectory.mk
+include 1_ToolEnv/0_Build/9_Make/0_Src/AppSw/lwip/test/unit/etharp/SubDirectory.mk
+include 1_ToolEnv/0_Build/9_Make/0_Src/AppSw/lwip/test/unit/ip4/SubDirectory.mk
+include 1_ToolEnv/0_Build/9_Make/0_Src/AppSw/lwip/test/unit/mdns/SubDirectory.mk
+include 1_ToolEnv/0_Build/9_Make/0_Src/AppSw/lwip/test/unit/tcp/SubDirectory.mk
+include 1_ToolEnv/0_Build/9_Make/0_Src/AppSw/lwip/test/unit/udp/SubDirectory.mk
+
+# Make-Rules:
+# Make-rules for architecture: Tricore
+
+#Make-rule to build file: lwip_unittests.c
+B_GEN_DEP_FILES+= 2_Out/Tricore_Tasking/Tasking_Files/0_Src/AppSw/lwip/test/unit/lwip_unittests.d
+B_GEN_OBJS_TRICORE_TC+= 2_Out/Tricore_Tasking/Tasking_Files/0_Src/AppSw/lwip/test/unit/lwip_unittests.o
+
+2_Out/Tricore_Tasking/Tasking_Files/0_Src/AppSw/lwip/test/unit/lwip_unittests.o: 0_Src/AppSw/lwip/test/unit/lwip_unittests.c $(B_GEN_CONFIG_TRICORE_TASKING)
+	@mkdir -p $(@D)
+	@-rm -f $(B_GEN_ELF_TRICORE_TC) $(B_GEN_HEX_TRICORE_TC)
+	@echo 'Building source file lwip_unittests.c for Tricore'
+	$(B_GEN_TRICORE_TASKING_CC) -f $(B_GEN_INC_LISTFILE_TRICORE) $(B_GEN_EXT_INCLUDE_PATHS) -o $(@:.o=.src) $< --dep-file=$(@:.o=.dep) $(B_TASKING_TRICORE_CC_OPTIONS)
+	$(B_GEN_TRICORE_TASKING_AS1) -o $@ $(@:.o=.src) $(B_TASKING_TRICORE_ASM_OPTIONS)
+	$(B_GEN_TRICORE_TASKING_DEPCONV) -e 's/\($(subst .,\.,$(@F)) *:\)/$(subst /,\/,$(@D))\/\1/g' -e 's/\\/\//g' -e '/\"/d' $(@:.o=.dep) > $(@:.o=.d) ; rm -f $(@:.o=.dep)
